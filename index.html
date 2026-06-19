@@ -841,56 +841,29 @@
     <!-- CONTACT -->
     <section id="contact">
       <p class="section-label">Contact</p>
-      <p class="contact-text">I'm currently available for freelance projects and full-time roles. If you have something interesting in mind, send a note.</p>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
-          </div>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="What are you working on?" required></textarea>
-        </div>
-        <div class="form-submit">
-          <button type="submit" class="btn" id="submit-btn">Send message</button>
-        </div>
-      </form>
+      <p class="contact-text">I'm currently looking for internship opportunities. Feel free to reach out — I'd love to connect.</p>
+      <div class="contact-links">
+        <a href="mailto:samrudhnarendra5@email.com" class="contact-row">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">samrudhnarendra5@email.com ↗</span>
+        </a>
+        <a href="https://linkedin.com/in/samrudha-narendra-a19219293/" target="_blank" class="contact-row">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/samrudha-narendra-a19219293/ ↗</span>
+        </a>
+        <a href="https://github.com/kwazzy-coder" target="_blank" class="contact-row">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/kwazzy-coder ↗</span>
+        </a>
+      </div>
     </section>
 
   </main>
 
   <footer>
     <p class="footer-copy">© 2026 Samrudha Narendra</p>
-    <ul class="footer-links">
-      <li><a href="https://github.com/kwazzy-coder" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.comin/samrudha-narendra-a19219293/" target="_blank">LinkedIn</a></li>
-      <li><a href="mailto:samrudhnarendra5@gmail.com">Email</a></li>
-    </ul>
   </footer>
 
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.textContent = 'Sent ✓';
-      btn.style.background = '#0052CC';
-      btn.style.borderColor = '#0052CC';
-      btn.disabled = true;
-      e.target.reset();
-      setTimeout(() => {
-        btn.textContent = 'Send message';
-        btn.style.background = '';
-        btn.style.borderColor = '';
-        btn.disabled = false;
-      }, 3000);
-    }
-  </script>
 
 </body>
 </html>
