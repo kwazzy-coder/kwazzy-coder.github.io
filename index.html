@@ -639,8 +639,10 @@
             <li>React.js</li>
             <li>Node.js</li>
             <li>Express.js</li>
-            <li>PyTorch</li>
-            <li>LangChain</li>
+                <li>PyTorch</li>
+                <li>LangChain</li>
+                <li>FastAPI</li>
+                <li>LightGBM</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -652,6 +654,9 @@
             <li>RAG</li>
             <li>FAISS</li>
             <li>BM25</li>
+                <li>LightGBM</li>
+                <li>LambdaRank</li>
+                <li>Reciprocal Rank Fusion (RRF)</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -688,6 +693,29 @@
     <!-- PROJECTS -->
     <section id="projects">
       <p class="section-label">Selected work</p>
+      <div class="project">
+        <div class="project-header">
+          <span class="project-name">Hybrid AI Product Search Engine</span>
+          <div class="project-links">
+            <a href="https://github.com/kwazzy-coder/Hybrid-Product-Search-Engine" aria-label="Github">Github ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">Architected a production-grade, multi-stage retrieval pipeline combining BM25 lexical search, FAISS semantic retrieval, and LightGBM LambdaRank re-ranking to deliver sub-second search latency at scale.</p>
+        <ul class="role-bullets">
+          <li>Implemented Reciprocal Rank Fusion (RRF) with ML-based re-ranking and real-time filtering on category, price, and inventory constraints, improving relevance and ranking quality.</li>
+          <li>Designed a decoupled microservices architecture using FastAPI, Kafka, MongoDB, and Docker, enabling real-time product indexing, live updates, and horizontal scaling.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">FAISS</span>
+          <span class="tag">BM25</span>
+          <span class="tag">LightGBM</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">React</span>
+          <span class="tag">Docker</span>
+        </div>
 
       <div class="project">
         <div class="project-header">
@@ -709,7 +737,7 @@
         <div class="project-header">
           <span class="project-name">Self-Healing Agentic RAG System</span>
           <div class="project-links">
-            <a href="https://github.com/kShaman771/Healers_Self-Healing-Agentic-RAG-System" aria-label="GitHub">GitHub ↗</a>
+            <a href="https://github.com/kwazzy-coder/Self-Healing-Agentic-RAG-System" aria-label="GitHub">GitHub ↗</a>
           </div>
         </div>
         <p class="project-desc">A Retrieval-Augmented Generation pipeline using hybrid retrieval with BM25 and FAISS. Implements hallucination detection, query reformulation, and self-correction workflows — improving answer reliability through iterative re-retrieval on HotpotQA datasets.</p>
